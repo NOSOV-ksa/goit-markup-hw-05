@@ -194,7 +194,7 @@ ul {
     cursor: pointer;
 }
 
-/* -----------------Home page------------------- */
+/* ===========================Home page=========================== */
 
 
 .hero {
@@ -222,12 +222,103 @@ ul {
 .pin {
     /* padding: 10px 32px; */
 
-    border-radius: 4px;
-    padding: 6px 22px;
-    margin: 0px;
-    outline: 0px;
-    border-color: transparent; 
+    /* border-radius: 4px; */
+    /* padding: 6px 22px; */
+    /* margin: 0px;
+    outline: 0px; */
+    /* border-color: transparent;  */
 }
+
+.button {
+    border: none;
+    border-radius: 4px;
+
+    background-color: var(--secondr-text-color);
+    color: var(--color-white);
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding: 10px 32px;
+}  
+
+.solution {
+    margin: 0px;
+    bottom: 0px;
+    margin-bottom: 30px;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.skills {
+    margin-bottom: 10px;
+   
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+.case {
+    margin: 0px;
+    padding: 0px;    
+    position: relative;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+}
+
+.case-text {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    /* text-align: center; */
+    
+    line-height: 1.14;
+    letter-spacing: 00.03em;
+    color: var(--color-white);
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px 0px;
+    
+    width: 370px;
+    position: absolute;
+    margin: 0px;
+
+}
+
+.photo-report .case + .case {
+    padding-left: 30px;
+}
+
+
+.content {
+    margin: 0px;
+    padding: 0px;
+  
+    color: var(--title-text-color);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.87;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .icon-article {
     margin: 0px;
@@ -301,8 +392,6 @@ ul {
 }
 
 .team-title {
-    
-    
     text-align: center;
     font-weight: 700;
     font-size: 36px;
@@ -345,7 +434,6 @@ img {
 .team-wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
-
     background-color: var(--color-white);
 }
 
@@ -369,7 +457,6 @@ img {
 .social {
     display: flex;
     justify-content: center;
-
     margin-top: 16px;  
 }
 
@@ -382,7 +469,6 @@ img {
     margin-right: 10px;
 }
     
-
 .icon-link {
     display: flex;
     align-items: center;
@@ -390,8 +476,7 @@ img {
     border-radius: 50%;
     
     width: 100%;
-    height: 100%;
-    
+    height: 100%;    
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -449,14 +534,6 @@ img {
 .icon-company:not(:last-child) {
     margin-right: 30px;
 } 
-   
-
-/* .icon-company:hover .icon-logo {
-    fill: var(--secondr-text-color);
-} */
-.icon-company:hover {
-   
-}
 
 .icon-logo {
     padding: 16px 32px;
@@ -471,12 +548,63 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-logo:hover {
+
+/* ==============================Модальное окно========================= */
+
+.backdrop {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events:none;
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    min-height: 528px;
+    width: 580px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 50px;
+
+    text-align: center;
+    font-size: 14px;
+}
+
+.button-close {
+    position: absolute;
+    fill: none;
+    right: 8px;
+    top: 8px;
+    border: none;
+    background: local;
+}
+
+.close-icon{
+   
+    
+}
+
+.close-icon{ 
+   color: rgba(0, 0, 0, 0.1);
     
 }
 
 
-/* Футер логотип */
+/* ==============================Футер логотип========================= */
+
 .footer {
     background-color: var(--section-color);
     padding: 60px 0px;
@@ -487,7 +615,6 @@ img {
 .footer-item {
     display: flex;
     align-items: baseline;
-    
 }
 
 footer .second {
@@ -517,7 +644,7 @@ footer .second {
     padding-bottom: 20px;
 }
 
-/* Футер контакт */
+/*========================== Футер контакт============================== */
 
 
 .footer-contact .contact {
@@ -537,8 +664,7 @@ color: rgba(255, 255,255, 0.6);
     margin-bottom: 10px;
 }
 
-.accede {
-    
+.accede {    
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
@@ -572,19 +698,14 @@ color: rgba(255, 255,255, 0.6);
     justify-content: center;
     border-radius: 50%;
     width: 100%;
-    height: 100%;
-    
-  
+    height: 100%;  
 }
 
-
-.social-item {
-     
+.social-item {     
 }
 
 .footer-icon {
-    fill: #ffffff;
-    
+    fill: #ffffff;    
 }
 
 
@@ -596,10 +717,8 @@ color: rgba(255, 255,255, 0.6);
 }
 
 
-.social-item {
-    
+.social-item {    
 }
-
 
 .social-icon-link:hover .footer-icon,
 .social-icon-link:focus .footer-icon {
@@ -764,88 +883,6 @@ color: rgba(255, 255,255, 0.6);
 
 
 
-.button {
-    background-color: var(--secondr-text-color);
-    color: var(--color-white);
-    font-family: Roboto, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    text-align: center;
-    padding: 10px 32px;
-}
-
-
-.solution {
-    margin: 0px;
-    bottom: 0px;
-    margin-bottom: 30px;
-
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--color-white);
-}
-
-.skills {
-    margin-bottom: 10px;
-   
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-}
-
-.case {
-    margin: 0px;
-    padding: 0px;    
-    position: relative;
-    display: flex;
-    align-items:flex-end;
-    justify-content: center;
-}
-
-
-
-.case-text {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    /* text-align: center; */
-    
-    line-height: 1.14;
-    letter-spacing: 00.03em;
-    color: var(--color-white);
-    background-color: rgba(47, 48, 58, 0.8);
-    padding: 27px 0px;
-    
-    width: 370px;
-    position: absolute;
-    margin: 0px;
-
-}
-
-
-
-
-.photo-report .case + .case {
-    padding-left: 30px;
-}
-
-
-.content {
-    margin: 0px;
-    padding: 0px;
-  
-    color: var(--title-text-color);
-    font-family: Roboto, sans-serif;
-    font-size: 14px;
-    line-height: 1.87;
-}
 
 .btn li:not(:last-child) {
     margin-right: 8px;

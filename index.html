@@ -52,7 +52,7 @@
             <div class="overley hero">
                 <h1 class="solution">еффективные решения <br /> для вашего бизнеса</h1>
                     <a class="pin" href="#">
-                        <button type="button" class="button pointer">Заказать услугу</button>
+                        <button data-modal-open type="button" class="button pointer">Заказать услугу</button>
                     </a>
             </div>
 
@@ -332,7 +332,22 @@
                 </ul>                
             </div>
         </section>
-    
+
+        <div data-modal class="backdrop is-hidden">
+            <div class="modal">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae magni repellat totam sequi velit, ratione veritatis corrupti iure officiis itaque laborum neque, delectus aperiam magnam saepe quia atque enim recusandae ipsam tenetur. Beatae similique, qui ducimus odit doloribus maiores sint alias, earum, nihil nisi inventore accusamus non sapiente mollitia hic blanditiis harum voluptatem deleniti! Laboriosam ea voluptatem dolores officiis facilis ullam quaerat rerum, provident reiciendis explicabo ipsa eum ex blanditiis ratione qui vero ab aut dolorem, totam, dolor maiores. Repudiandae soluta, ullam ab ipsam eligendi, itaque, officiis dignissimos minima voluptate nobis ducimus vitae. Esse consectetur et aliquid officia cum placeat.
+                <button data-modal-close class="button-close">
+                    <!-- <a class="close" href="./index.html"> -->
+                        <svg class="close-icon" width="30" height="30">
+                            <use href="./images/sprite.svg#close"></use>
+                        </svg>
+                    <!-- </a>  -->
+                </button>
+                
+            </div>
+
+        </div>
+        
     </main>
 
     <footer>
@@ -401,6 +416,8 @@
 
     </footer>
 
+    <script src="./modal.js"></script>
+
     </body>
     
-</html>
+</html>    
